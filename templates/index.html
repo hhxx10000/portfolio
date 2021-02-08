@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> Home </title>
+{% endblock %}
+
+{% block body %}
+<main role="main">
+    <div class="jumbotron">
+      <div class="col-sm-8 mx-auto">
+        <h1>Welcome!</h1>
+        <br>
+        <p>This is the homepage of a fish family's financial facts website. </p>
+        <p>The male fish (<code>A sweet and innocent mahi-mahi</code>) is trying to gamble some money to pay for the rent and prepare the house down payment! </p>
+        <p>The female fish (<code>A guilty tilapia</code>) is the budget provider who does not know how to invest.</p>
+        <p>For the fish family to understand their budget status, please refer to <a href="/portf">Portfolio</a> to have a overlook.</p>
+        <p>If you are interested in one of the stocks, use <a href="/stock">Stock Price</a> to figure out the price behavior.</p>
+        <p>To import your transactions, navigate to <a href="/import">Import</a>.</p>
+        
+        <p>
+          <a class="btn btn-primary" href="/portf" role="button">Check Portfolio!</a>
+        </p>
+      </div>
+    </div>
+  </main>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> Portfolio </title>
+{% endblock %}
+
+{% block body %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            {% for header in headings%}
+                <th scope="col"> {{ header }} </th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        {%if row[-1] >= 0 %}
+        <tr class="table-success">
+        {%else %}
+        <tr class="table-danger">
+        {%endif%}
+            {% for cell in row %}
+            <td> {{cell}} </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> Import </title>
+{% endblock %}
+
+{% block body %}
+<div class="card">
+    <div class="card-body">
+        <form method="post">
+            Enter CSV file here:
+            <textarea class="form-control" rows="5" name="trans_csv"></textarea>
+            <button class="btn btn-success mt-3">Render CSV</button>
+        </form>
+        <table class="display table responsive" style="width: 100%">
+            <thead>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
